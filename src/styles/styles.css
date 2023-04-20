@@ -7,6 +7,14 @@ body {
   padding: 20px;
 }
 
+iframe {
+  pointer-events: none;
+}
+
+.selected {
+  border: 2px solid #f00;
+}
+
 .card {
   width: 150px;
   height: 100px;
