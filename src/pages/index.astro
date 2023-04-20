@@ -9,16 +9,39 @@ import "../styles/styles.css";
 ---
 
 <MainLayout>
-  <div id="gallery">
+  <div id="frames_test">
+    <h1>ALLE</h1>
+    <nav>
+      <button data-aco="alle">ALLE</button>
+      <button data-aco="ja" class="valgt">ACO</button>
+      <button data-aco="nej">IKKE-ACO</button>
+    </nav>
+  </div>
+
+  <template>
+    <article class="template_article outline">
+      <h3 class="template_navn"></h3>
+      <iframe class="template_frame" src="" frameborder="0"></iframe>
+      <p class="template_beskrivelse"></p>
+    </article>
+  </template>
+
+  <section id="galleri"></section>
+
+  <script>
+    import "../scripts/frames.js";
+  </script>
+
+  <!-- <div id="gallery">
     <div class="card" data-id="1">Card 1</div>
     <div class="card" data-id="2">Card 2</div>
     <div class="card" data-id="3">Card 3</div>
-    <!-- Add more cards as needed -->
+
   </div>
   <button id="generateLink">Generate Link</button>
-  <a id="resultLink" href="#" style="display: none">View Selected Cards</a>
+  <a id="resultLink" href="#" style="display: none">View Selected Cards</a> -->
 
-  <script>
+  <!-- <script>
     import "../scripts/script.js";
-  </script>
+  </script> -->
 </MainLayout>
