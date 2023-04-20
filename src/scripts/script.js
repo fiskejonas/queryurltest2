@@ -18,7 +18,8 @@ cards.forEach((card) => {
 });
 
 generateLink.addEventListener("click", () => {
-  const baseUrl = "http://127.0.0.1:5500/selected-cards.html";
+  const baseUrl =
+    "https://master--whimsical-heliotrope-7971c3.netlify.app//selected-cards.html";
   const parameters = { cardIds: Array.from(selectedCards).join(",") };
 
   const urlWithParameters = createUrlWithParameters(baseUrl, parameters);
